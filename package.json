@@ -1,8 +1,11 @@
 {
   "name": "@superhighway/create-loom",
   "version": "0.0.0",
+  "devDependencies": {
+    "@types/node": "^24.8.1",
+    "typescript": "^5.9.3"
+  },
   "main": "dist/index.js",
-  "type": "module",
   "scripts": {
     "build": "tsc --build tsconfig.main.json",
     "build:tests": "tsc --project tsconfig.main.json --outDir dist-test --declarationDir dist && tsc --build tsconfig.test.json",
@@ -10,8 +13,5 @@
     "start": "npm run clean && npm run build && node .",
     "test": "npm run build:tests && cd dist-test && node --test"
   },
-  "devDependencies": {
-    "@types/node": "^24.8.1",
-    "typescript": "^5.9.3"
-  }
+  "type": "module"
 }
