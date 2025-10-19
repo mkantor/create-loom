@@ -5,6 +5,7 @@
     "@types/node": "^24.8.1",
     "typescript": "^5.9.3"
   },
+  "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc --build tsconfig.main.json",
