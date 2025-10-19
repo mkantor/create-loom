@@ -47,7 +47,7 @@ await cp(templateDirectory, path, { recursive: true })
 /**
  * Create `tsconfig.json`.
  */
-nodeChildProcess.execSync('tsc --init')
+nodeChildProcess.execSync('npx tsc --init')
 
 /**
  * Edit `tsconfig.json` to add necessary configuration.
