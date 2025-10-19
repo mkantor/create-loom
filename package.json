@@ -1,6 +1,6 @@
 {
   "name": "create-loom",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "bin": "dist/index.js",
   "devDependencies": {
     "@types/node": "^24.8.1",
