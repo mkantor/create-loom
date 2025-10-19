@@ -1,12 +1,18 @@
 {
   "name": "create-loom",
   "version": "0.0.0",
+  "bin": "dist/index.js",
   "devDependencies": {
     "@types/node": "^24.8.1",
     "typescript": "^5.9.3"
   },
+  "files": [
+    "dist/*",
+    "template/*"
+  ],
   "license": "MIT",
   "main": "dist/index.js",
+  "repository": "github:mkantor/create-loom",
   "scripts": {
     "build": "tsc --build tsconfig.main.json",
     "build:tests": "tsc --project tsconfig.main.json --outDir dist-test --declarationDir dist && tsc --build tsconfig.test.json",
