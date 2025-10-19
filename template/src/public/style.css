@@ -1,0 +1,6 @@
+html {
+  font-size: xx-large;
+  display: grid;
+  height: 100%;
+  place-items: center;
+}

@@ -13,5 +13,8 @@
     "start": "npm run clean && npm run build && node .",
     "test": "npm run build:tests && cd dist-test && node --test"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "comment-json": "^4.4.1"
+  }
 }

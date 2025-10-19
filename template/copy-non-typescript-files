@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+root_dir="src"
+out_dir="dist"
+
+find "$root_dir" \
+  \( -type f -or -type l \) \
+  -and \
+  \( -not -name '*.tsx' -and -not -name '*.ts' \) \
+  -exec sh \
+  -c '
+    mkdir -p "$(
+      dirname "'$out_dir'/$(echo $1 | sed -e s#^'$root_dir'/##)"
+    )"
+    cp -R $1 "'$out_dir'/$(echo $1 | sed -e s#^'$root_dir'/##)"
+  ' shell {} \;
